@@ -1,465 +1,283 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
-    <!-- PERFORMANCE: Preload Critical Assets (LCP Optimization) -->
-    <link rel="preload" as="image" href="images/hero.webp">
-    <link rel="preconnect" href="https://cdn.jsdelivr.net">
-    <link rel="preconnect" href="https://cdn.tailwindcss.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="dns-prefetch" href="https://pixel.aurisens.site">
-    
-    <!-- TRACKING (Mantido original) -->
-    <script src="https://cdn.jsdelivr.net/gh/casmar76/SmartClick/smc_ultra.js" data-origin-url="https://pixel.aurisens.site"></script>
-
-    <!-- TECHNICAL SEO METAS -->
+<script src="https://cdn.jsdelivr.net/gh/casmar76/SmartClick/smart_click.js" data-origin-url="https://pixel.insulinet.site"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="referrer" content="strict-origin-when-cross-origin">
-    <meta name="theme-color" content="#ffffff">
-    <meta name="format-detection" content="telephone=no">
+    <title>NoBark Ultra</title>
+    <!-- Favicon -->
+    <link rel="icon" href="images/nobark-favcon.png" type="image/png">
     
-    <!-- PRIMARY SEO (Otimizado para Froplay) -->
-    <title>Froplay™ Offiziell | #1 Natürliche Formel für Männliche Vitalität</title>
-    <meta name="description" content="Hol dir deine Energie zurück mit Froplay™. Die #1 natürliche Formel für männliche Vitalität, Ausdauer und Fokus in Deutschland. Ohne Rezept. 30-Tage-Garantie.">
-    <meta name="keywords" content="Froplay, Froplay kaufen, Männliche Vitalität, Natürliches Testosteron, Energie Supplement, Libido Booster, Ausdauer, Männergesundheit Deutschland">
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <meta name="author" content="Froplay Deutschland">
-    <meta name="publisher" content="Froplay">
-    
-    <!-- CANONICAL & HREFLANG -->
-    <link rel="canonical" href="https://froplay.shop/">
-    <link rel="alternate" hreflang="de-DE" href="https://froplay.shop/">
-    <link rel="alternate" hreflang="x-default" href="https://froplay.shop/">
-    
-    <!-- OPEN GRAPH / FACEBOOK (Social Sharing) -->
-    <meta property="og:type" content="product">
-    <meta property="og:url" content="https://froplay.shop/">
-    <meta property="og:title" content="Froplay™ – Hol dir deine Energie zurück">
-    <meta property="og:description" content="Die einfache, natürliche Formel für Energie, Kraft und männliche Ausstrahlung. Entwickelt in Deutschland.">
-    <meta property="og:image" content="images/hero.webp">
-    <meta property="og:image:secure_url" content="images/hero.webp">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Mann voller Energie und Selbstvertrauen - Froplay Lifestyle">
-    <meta property="og:locale" content="de_DE">
-    <meta property="og:site_name" content="Froplay Deutschland">
-    <meta property="product:price:amount" content="49.99">
-    <meta property="product:price:currency" content="EUR">
-    <meta property="product:availability" content="in stock">
-    <meta property="product:brand" content="Froplay">
-
-    <!-- TWITTER CARDS -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Froplay™ – #1 Formel für Männliche Vitalität">
-    <meta name="twitter:description" content="Steigere Energie und Ausdauer mit der #1 bewerteten natürlichen Formel. Risikofrei testen.">
-    <meta name="twitter:image" content="images/hero.webp">
-    <meta name="twitter:image:alt" content="Froplay - Männliche Vitalität">
-
-    <!-- JSON-LD STRUCTURED DATA (Google Rich Snippets) -->
-    <script type="application/ld+json">
-    [
-        {
-          "@context": "https://schema.org",
-          "@type": "WebSite",
-          "name": "Froplay Deutschland",
-          "url": "https://froplay.shop/",
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://froplay.shop/search?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-          }
-        },
-        {
-          "@context": "https://schema.org",
-          "@type": "Product",
-          "name": "Froplay Natürliche Vitalitätsformel",
-          "image": [
-            "images/hero.webp",
-            "https://files.catbox.moe/84csdz.png"
-          ],
-          "description": "Die natürliche tägliche Formel, die Leistung, Energie und männliche Vitalität wiederherstellt. Hergestellt in Deutschland.",
-          "sku": "FROPLAY-DE-001",
-          "mpn": "FRO-GUMMY-DE",
-          "brand": {
-            "@type": "Brand",
-            "name": "Froplay",
-            "logo": "https://files.catbox.moe/84csdz.png"
-          },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.7",
-            "reviewCount": "76000",
-            "bestRating": "5",
-            "worstRating": "1"
-          },
-          "offers": {
-            "@type": "Offer",
-            "url": "https://froplay.shop/",
-            "priceCurrency": "EUR",
-            "price": "49.99",
-            "priceValidUntil": "2026-12-31",
-            "itemCondition": "https://schema.org/NewCondition",
-            "availability": "https://schema.org/InStock",
-            "seller": {
-              "@type": "Organization",
-              "name": "Froplay Offizieller Shop"
-            },
-            "shippingDetails": {
-              "@type": "OfferShippingDetails",
-              "shippingRate": {
-                "@type": "MonetaryAmount",
-                "value": "0",
-                "currency": "EUR"
-              },
-              "deliveryTime": {
-                "@type": "ShippingDeliveryTime",
-                "handlingTime": {
-                  "@type": "QuantitativeValue",
-                  "minValue": 0,
-                  "maxValue": 1,
-                  "unitCode": "DAY"
-                },
-                "transitTime": {
-                  "@type": "QuantitativeValue",
-                  "minValue": 1,
-                  "maxValue": 3,
-                  "unitCode": "DAY"
-                }
-              }
-            },
-            "hasMerchantReturnPolicy": {
-              "@type": "MerchantReturnPolicy",
-              "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-              "merchantReturnDays": 30,
-              "returnMethod": "https://schema.org/ReturnByMail",
-              "returnFees": "https://schema.org/FreeReturn"
-            }
-          }
-        },
-        {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [{
-            "@type": "Question",
-            "name": "Wie schnell wirkt Froplay?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Die meisten Männer berichten, dass sie bereits in den ersten Wochen der täglichen Anwendung einen Unterschied in Energie und Ausdauer spüren."
-            }
-          }, {
-            "@type": "Question",
-            "name": "Ist Froplay sicher?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Ja, Froplay ist eine natürliche Formel, hergestellt in Deutschland unter strengen Qualitätsstandards."
-            }
-          }, {
-            "@type": "Question",
-            "name": "Benötige ich ein Rezept für Froplay?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Nein, Froplay ist ein natürliches Nahrungsergänzungsmittel und ohne Rezept erhältlich."
-            }
-          }]
-        }
-    ]
-    </script>
-
-    <!-- STYLES (Mantido original) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
-        .hero-shadow {
-            text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+        .hero-text-blue {
+            color: #009FE3;
         }
-        /* Utility to hide sections */
-        .hidden-section {
-            display: none;
+        .check-icon {
+            color: #5CC151;
+        }
+        .section-divider {
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .comparison-card {
+            border: 4px solid #0056b3;
+            border-radius: 1rem;
+            overflow: hidden;
+            background-color: #fff;
+        }
+        .comparison-label {
+            background-color: white;
+            color: black;
+            font-weight: 700;
+            text-align: center;
+            padding: 0.5rem;
+            text-transform: uppercase;
+            font-size: 1.1rem;
         }
     </style>
 </head>
-<body class="bg-gray-50 min-h-screen flex flex-col">
+<body class="bg-gray-50 text-gray-800">
 
-    <!-- LANDING PAGE CONTENT -->
-    <div id="landing-page">
+    <!-- Navbar -->
+    <header class="w-full bg-white shadow-sm py-4">
+        <div class="container mx-auto px-4 flex justify-center">
+            <img src="images/nobarkultra-logo.png" alt="NoBark Ultra Logo" class="h-10 md:h-12 object-contain" onerror="this.style.display='none'; document.getElementById('logo-text').style.display='block'">
+            <h1 id="logo-text" class="text-2xl font-bold text-gray-800 hidden">NOBARK ULTRA</h1>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8 max-w-4xl">
         
-        <!-- Top Bar -->
-        <div class="bg-black text-white text-[10px] md:text-xs font-bold py-2 text-center uppercase tracking-wide w-full">
-            <span>SPEZIALANGEBOT NUR FÜR KURZE ZEIT | 46 % RABATT</span>
+        <!-- Hero Section -->
+        <div class="text-center mb-10">
+            
+            <!-- Social Proof Badge -->
+            <div class="flex flex-col md:flex-row items-center justify-center gap-3 mb-6">
+                <div class="flex items-center gap-2 bg-blue-50 px-4 py-2 rounded-full border border-blue-100 shadow-sm">
+                    <i class="fas fa-shield-alt text-green-500 text-xl"></i>
+                    <span class="font-bold text-gray-900 text-sm md:text-base">Trusted by 12,000+ Pet Parents</span>
+                </div>
+                
+                <!-- User Avatars -->
+                <div class="flex -space-x-3">
+                    <img class="w-8 h-8 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=1" alt="User 1">
+                    <img class="w-8 h-8 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=5" alt="User 2">
+                    <img class="w-8 h-8 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=8" alt="User 3">
+                    <img class="w-8 h-8 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=9" alt="User 4">
+                    <img class="w-8 h-8 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=12" alt="User 5">
+                </div>
+            </div>
+
+            <h1 class="text-3xl md:text-5xl font-bold leading-tight mb-4">
+                <span class="hero-text-blue">Finally, a Humane Way</span><br>
+                to Stop Barking and<br>
+                Unwanted Behavior — Instantly.
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                A gentle, vet-approved ultrasonic tone helps you correct behavior without yelling, punishment, or stress — just clear communication your dog understands.
+            </p>
         </div>
 
-        <!-- Sub-header -->
-        <div class="bg-gray-100 text-xs py-2 border-b border-gray-200 w-full">
-            <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-2 md:gap-6">
-                <div class="font-bold flex items-center gap-1">
-                    <img src="https://flagcdn.com/w20/de.png" alt="Deutschland Flagge" class="h-3 w-auto">
-                    <span>DEUTSCHLANDS #1 NATÜRLICHE FORMEL FÜR MÄNNLICHE VITALITÄT</span>
-                </div>
-                <div class="flex items-center gap-3 text-[10px] md:text-xs font-semibold text-gray-700 uppercase">
-                    <span><i class="fas fa-truck text-black mr-1"></i> <span>SCHNELLER & KOSTENLOSER VERSAND</span></span>
-                    <span><i class="fas fa-shield-alt text-black mr-1"></i> <span>30-TAGE-GELD-ZURÜCK-GARANTIE</span></span>
+        <!-- Product & Lifestyle Section -->
+        <div class="relative w-full flex flex-col md:flex-row items-center justify-center mb-12 gap-8">
+            
+            <!-- Product Image -->
+            <div class="relative z-10 w-full md:w-1/2 flex justify-center">
+                <div class="relative">
+                    <img src="images/nobarkultra.png" alt="NoBark Ultra Device" class="w-64 md:w-80 mx-auto object-contain drop-shadow-xl" onerror="this.src='https://placehold.co/300x500/111/FFF?text=Product+Image'">
                 </div>
             </div>
         </div>
 
-        <!-- Navbar -->
-        <nav class="bg-white px-4 py-3 sticky top-0 z-50 shadow-sm w-full">
-            <div class="container mx-auto flex justify-between items-center">
-                <div class="flex items-center w-full justify-center md:justify-start">
-                    <!-- Text Logo Replacement -->
-                    <a href="#" class="text-3xl md:text-4xl font-black tracking-tighter text-blue-900 hover:opacity-80 transition-opacity decoration-0 no-underline uppercase">
-                        FROPLAY
+        <!-- Before / After Comparison Section -->
+        <div class="grid grid-cols-2 gap-4 md:gap-8 mb-12">
+            <!-- Before -->
+            <div class="flex flex-col">
+                <div class="comparison-card h-64 md:h-80 relative bg-blue-100">
+                    <img src="images/nobarkultra-before.png" alt="Aggressive Dog Before" class="w-full h-full object-cover object-center" onerror="this.src='https://placehold.co/400x400/e0f2fe/1e3a8a?text=BEFORE:+Barking+Dog'">
+                </div>
+                <div class="text-center mt-2 font-bold text-lg md:text-xl">BEFORE</div>
+            </div>
+
+            <!-- After -->
+            <div class="flex flex-col">
+                <div class="comparison-card h-64 md:h-80 relative bg-blue-100">
+                    <img src="images/nobarkultra-after.png" alt="Calm Dog After" class="w-full h-full object-cover object-center" onerror="this.src='https://placehold.co/400x400/e0f2fe/1e3a8a?text=AFTER:+Happy+Dog'">
+                </div>
+                <div class="text-center mt-2 font-bold text-lg md:text-xl">AFTER</div>
+            </div>
+        </div>
+
+        <!-- Features List Section -->
+        <div id="features-section" class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 md:p-8 mb-16">
+            <ul class="space-y-6">
+                <li class="flex items-start gap-4 section-divider pb-4 last:border-0 last:pb-0">
+                    <div class="mt-1 flex-shrink-0">
+                        <i class="fas fa-check-circle check-icon text-3xl"></i>
+                    </div>
+                    <div class="text-lg md:text-xl font-medium text-gray-800">
+                        Emits a safe, high-frequency sound that immediately interrupts barking, jumping, chewing, digging, or leash pulling.
+                    </div>
+                </li>
+                <li class="flex items-start gap-4 section-divider pb-4 last:border-0 last:pb-0">
+                    <div class="mt-1 flex-shrink-0">
+                        <i class="fas fa-check-circle check-icon text-3xl"></i>
+                    </div>
+                    <div class="text-lg md:text-xl font-medium text-gray-800">
+                        No shocks, no sprays, no fear — only a humane tone that only dogs can hear.
+                    </div>
+                </li>
+                <li class="flex items-start gap-4 section-divider pb-4 last:border-0 last:pb-0">
+                    <div class="mt-1 flex-shrink-0">
+                        <i class="fas fa-check-circle check-icon text-3xl"></i>
+                    </div>
+                    <div class="text-lg md:text-xl font-medium text-gray-800">
+                        Works on all breeds and sizes, from energetic puppies to stubborn adults.
+                    </div>
+                </li>
+                <li class="flex items-start gap-4 pb-2">
+                    <div class="mt-1 flex-shrink-0">
+                        <i class="fas fa-check-circle check-icon text-3xl"></i>
+                    </div>
+                    <div class="text-lg md:text-xl font-medium text-gray-800">
+                        Perfect for home or outdoor training with a lightweight, USB-rechargeable device you can take anywhere.
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Decision/Options Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 max-w-4xl mx-auto">
+            
+            <!-- OPTION 1: Buy Now (Green) -->
+            <div class="flex flex-col rounded-2xl overflow-hidden shadow-lg border-2 border-green-500 bg-white relative transform transition hover:-translate-y-1 hover:shadow-xl">
+                <!-- Recommended Badge -->
+                <div class="bg-green-500 text-white text-center py-1 font-bold text-sm tracking-wide uppercase">
+                    Recommended
+                </div>
+                <!-- Header -->
+                <div class="bg-green-50 p-4 text-center border-b border-green-100">
+                    <h3 class="text-xl md:text-2xl font-bold text-gray-800">OPTION 1</h3>
+                    <p class="text-green-600 font-bold text-lg">Get Up to 75% OFF Right Now</p>
+                    <p class="text-gray-600 font-medium mt-1">Go Straight to Secure Checkout</p>
+                </div>
+                <!-- Content -->
+                <div class="p-6 flex-grow flex flex-col justify-between">
+                    <p class="text-sm text-gray-600 mb-4 italic leading-relaxed">
+                        Perfect for customers who already know NoBark Ultra™ is the right choice — or want to secure today’s Cyber Monday Super Discount before it expires.
+                    </p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-green-500 mt-1"></i>
+                            <span class="text-gray-700 font-medium">Discount automatically applied</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-green-500 mt-1"></i>
+                            <span class="text-gray-700 font-medium">Use Code: <strong>CYBR25</strong></span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-green-500 mt-1"></i>
+                            <span class="text-gray-700 font-medium">Fast, encrypted U.S. checkout</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-green-500 mt-1"></i>
+                            <span class="text-gray-700 font-medium">Ships from U.S. warehouse</span>
+                        </li>
+                        <!-- Substituted Emoji ❗ for FontAwesome Icon -->
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-exclamation-circle text-red-500 mt-1"></i>
+                            <span class="text-red-600 font-bold">Limited stock due to high demand</span>
+                        </li>
+                    </ul>
+                    <!-- Substituted Emoji ➡️ for FontAwesome Icon -->
+                    <a href="https://www.fasttrack37.com/PM7HK3TH/2RCP16WK/?uid=48701" class="block w-full bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-4 rounded-xl text-center shadow-md text-lg leading-tight transition-colors">
+                        <i class="fas fa-arrow-right mr-2"></i> YES, I WANT THE<br>UP TO 75% OFF DEAL
                     </a>
                 </div>
             </div>
-        </nav>
 
-        <!-- Hero Image Section -->
-        <div class="relative w-full h-[400px] md:h-[500px] lg:h-[600px] bg-gray-900 overflow-hidden group">
-            <img src="images/hero.webp" class="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" alt="Selbstbewusster Mann beim Wandern">
-            
-            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/30"></div>
-            <div class="absolute inset-0 container mx-auto px-4 pointer-events-none">
-                <div class="relative w-full h-full">
-                    <div class="absolute top-8 left-0 right-0 z-10 md:top-16 md:left-4 text-center md:text-left">
-                        <h1 class="text-white text-3xl md:text-5xl font-extrabold leading-[1.1] hero-shadow max-w-3xl mx-auto md:mx-0">
-                            Hol dir deine Energie, Kraft & Ausstrahlung zurück
-                        </h1>
-                        <p class="text-gray-100 text-lg md:text-xl font-medium mt-4 hero-shadow max-w-2xl mx-auto md:mx-0">
-                            Fühle dich wieder wie du selbst — voller Power, Fokus und Selbstvertrauen.
-                        </p>
-                    </div>
+            <!-- OPTION 2: Learn More (Blue) -->
+            <div class="flex flex-col rounded-2xl overflow-hidden shadow-md border-2 border-blue-100 bg-white transform transition hover:-translate-y-1 hover:shadow-lg">
+                <!-- Header -->
+                <div class="bg-blue-50 p-6 text-center border-b border-blue-100 mt-7"> 
+                    <h3 class="text-xl md:text-2xl font-bold text-gray-800">OPTION 2</h3>
+                    <p class="text-blue-600 font-bold text-lg">Learn More Before Ordering</p>
+                    <p class="text-gray-600 font-medium mt-1">See All Features, Photos & Reviews</p>
                 </div>
-            </div>
-        </div>
-
-        <!-- Content Section -->
-        <div class="container mx-auto px-4 py-8 md:py-12 max-w-5xl">
-            <div class="grid md:grid-cols-1 gap-8">
-                <div>
-                    <!-- Ratings -->
-                    <div class="flex flex-wrap items-center gap-2 mb-4 text-sm md:text-base">
-                        <div class="flex text-yellow-400">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                        <span class="font-bold text-gray-900">4.7</span>
-                        <span class="text-gray-300 mx-1">|</span>
-                        <span class="text-gray-600 italic">Mit einer exzellenten Bewertung basierend auf 7.980 Bewertungen</span>
-                    </div>
-
-                    <!-- Main Title -->
-                    <h2 class="text-2xl md:text-3xl font-black text-black leading-tight mb-4">
-                        Die einfache tägliche Gummibärchen-Formel, die dich unterstützt: <br class="hidden md:block">
-                        <span class="text-gray-800">ohne Aufwand, ohne Rezept, ohne peinliche Arztbesuche.</span>
-                    </h2>
-
-                    <!-- Subtitle -->
-                    <p class="text-gray-600 font-medium text-[16px] md:text-lg leading-relaxed mb-8 max-w-3xl">
-                        Entwickelt in Deutschland — natürlich. wirkungsvoll. unkompliziert.
+                <!-- Content -->
+                <div class="p-6 flex-grow flex flex-col justify-between">
+                    <p class="text-sm text-gray-600 mb-4 italic leading-relaxed">
+                        Prefer to understand everything before buying? Visit the full official product page and explore:
                     </p>
-
-                    <!-- Features Section -->
-                    <div class="mb-8">
-                        <h3 class="text-lg font-bold text-black mb-5 uppercase tracking-wide border-l-4 border-blue-800 pl-3">
-                            Warum Männer in Deutschland Verlorin wählen
-                        </h3>
-                        <ul class="space-y-4 md:grid md:grid-cols-2 md:space-y-0 md:gap-x-6 md:gap-y-4">
-                            <li class="flex items-start gap-3">
-                                <i class="fas fa-check-circle text-blue-700 text-xl mt-0.5 shrink-0"></i>
-                                <span class="text-gray-700 font-medium">Spürbar mehr Energie & Ausdauer im Alltag</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <i class="fas fa-check-circle text-blue-700 text-xl mt-0.5 shrink-0"></i>
-                                <span class="text-gray-700 font-medium">Unterstützt deine Leistungsfähigkeit, wenn es darauf ankommt</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <i class="fas fa-check-circle text-blue-700 text-xl mt-0.5 shrink-0"></i>
-                                <span class="text-gray-700 font-medium">Bringt Selbstvertrauen & Männlichkeit zurück</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <i class="fas fa-check-circle text-blue-700 text-xl mt-0.5 shrink-0"></i>
-                                <span class="text-gray-700 font-medium">Entwickelt in Deutschland</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <i class="fas fa-check-circle text-blue-700 text-xl mt-0.5 shrink-0"></i>
-                                <span class="text-gray-700 font-medium">Praktische tägliche Gummies – keine Tabletten</span>
-                            </li>
-                             <li class="flex items-start gap-3">
-                                <i class="fas fa-check-circle text-blue-700 text-xl mt-0.5 shrink-0"></i>
-                                <span class="text-gray-700 font-medium">Erste Ergebnisse oft schon nach wenigen Wochen</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- CTA SECTION -->
-                    <div class="w-full mb-8">
-                        <!-- Direct Link since country selection is removed -->
-                        <!-- Botão alterado para Azul de Credibilidade (Trust Blue) -->
-                        <a href="https://www.fasttrack36.com/PHPWHDRK/2RDL145H/?uid=48760" class="block w-full bg-[#1e40af] hover:bg-[#172554] text-white font-bold text-xl md:text-2xl py-5 rounded-full shadow-md hover:shadow-lg transform transition hover:-translate-y-0.5 mb-4 text-center no-underline">
-                            Jetzt bestellen und <span class="text-yellow-300">50 % sparen</span>
-                        </a>
-                        
-                        <div class="flex items-center justify-center gap-3 text-gray-500 text-xs md:text-sm font-medium">
-                            <div class="h-px bg-gray-300 w-full max-w-[40px] md:max-w-[80px]"></div>
-                            <span class="text-center">Teste Verlorin völlig risikofrei dank unserer 30-Tage-Garantie.</span>
-                            <div class="h-px bg-gray-300 w-full max-w-[40px] md:max-w-[80px]"></div>
-                        </div>
-                    </div>
-
-                    <!-- Social Proof Box -->
-                    <div class="border border-gray-200 rounded-xl p-5 shadow-sm bg-gray-50 md:max-w-xl mb-10 mx-auto md:mx-0">
-                        <div class="flex items-center justify-center gap-3 pb-3 border-b border-gray-200 mb-3">
-                            <div class="flex -space-x-3">
-                                <img class="w-8 h-8 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=11" alt="">
-                                <img class="w-8 h-8 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=53" alt="">
-                                <img class="w-8 h-8 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=13" alt="">
-                                <img class="w-8 h-8 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=68" alt="">
-                                <div class="w-8 h-8 rounded-full border-2 border-white bg-blue-100 flex items-center justify-center text-[9px] font-bold text-blue-800">
-                                    <i class="fas fa-plus"></i>
-                                </div>
-                            </div>
-                            <span class="text-sm font-bold text-gray-800">„Das Beste, was ich seit Jahren ausprobiert habe.” – <span class="font-normal italic text-gray-600">Deutsche Männer</span></span>
-                        </div>
-                        <div class="flex flex-col sm:flex-row items-center justify-center gap-2 text-green-700 text-sm font-bold">
-                            <div class="flex items-center gap-2">
-                                <i class="fas fa-check text-green-600"></i>
-                                <span>Auf Lager</span>
-                            </div>
-                            <span class="hidden sm:block text-gray-300">|</span>
-                            <div class="flex items-center gap-2">
-                                <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
-                                <span class="text-red-600">Angebot endet bald</span>
-                            </div>
-                        </div>
-                    </div>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-blue-400 mt-1"></i>
+                            <span class="text-gray-600">How ultrasonic training works</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-blue-400 mt-1"></i>
+                            <span class="text-gray-600">Behavior problems it solves</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-blue-400 mt-1"></i>
+                            <span class="text-gray-600">Detailed features & benefits</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-blue-400 mt-1"></i>
+                            <span class="text-gray-600">Expert recommendations</span>
+                        </li>
+                         <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-blue-400 mt-1"></i>
+                            <span class="text-gray-600">Real customer reviews</span>
+                        </li>
+                         <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-blue-400 mt-1"></i>
+                            <span class="text-gray-600">Photos & demonstration videos</span>
+                        </li>
+                         <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-blue-400 mt-1"></i>
+                            <span class="text-gray-600">Warranty & guarantee info</span>
+                        </li>
+                         <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-blue-400 mt-1"></i>
+                            <span class="text-gray-600">FAQs</span>
+                        </li>
+                    </ul>
+                    <!-- Substituted Emoji 👁️ for FontAwesome Icon -->
+                    <a href="https://www.fasttrack37.com/PM7HK3TH/2RCP16WK/?uid=48700" class="block w-full bg-white border-2 border-blue-500 hover:bg-blue-50 text-blue-600 font-bold py-4 px-4 rounded-xl text-center shadow-sm text-lg leading-tight transition-colors">
+                        <i class="fas fa-eye mr-2"></i> SHOW ME THE COMPLETE<br>PRODUCT PAGE
+                    </a>
                 </div>
             </div>
+
         </div>
 
-        <!-- Footer Section -->
-        <footer class="bg-gray-100 border-t border-gray-200 pt-12 pb-8">
-            <div class="container mx-auto px-4 max-w-5xl">
-                
-                <div class="flex flex-col justify-center items-center gap-10 mb-10">
-                    <div class="flex flex-col items-center gap-4">
-                        <!-- Text Logo Replacement for Footer -->
-                        <span class="text-2xl font-black tracking-tight text-gray-400 uppercase opacity-80">FROPLAY</span>
-                        
-                        <p class="text-center text-gray-500 text-sm md:text-base leading-relaxed max-w-2xl mx-auto">
-                            Verlorin – Natürliche Unterstützung für echte Männlichkeit.<br>
-                            Ehrliche Inhaltsstoffe. Transparente Wirkung.<br>
-                            Entwickelt, um Männern in Deutschland ihre Vitalität zurückzugeben.
-                        </p>
-                    </div>
+    </main>
 
-                    <!-- CUSTOMER CARE SECTION -->
-                    <div class="flex flex-col items-center gap-6">
-                        <h3 class="text-xl font-black text-gray-900 uppercase tracking-wider">KUNDENSERVICE</h3>
-                        <div class="flex flex-col gap-4 items-start sm:items-center">
-                            <a href="mailto:support@verlorin.com" class="flex items-center gap-3 text-gray-600 hover:text-black transition font-bold text-[15px] group">
-                                <div class="w-8 h-8 rounded-full bg-white border border-gray-300 flex items-center justify-center group-hover:border-black transition">
-                                    <i class="fas fa-envelope text-sm"></i>
-                                </div>
-                                <span>E-Mail Support</span>
-                            </a>
-                            <button onclick="alert('Live-Chat wird verbunden...')" class="flex items-center gap-3 text-gray-600 hover:text-black transition font-bold text-[15px] group">
-                                <div class="w-8 h-8 rounded-full bg-white border border-gray-300 flex items-center justify-center group-hover:border-black transition">
-                                    <i class="fas fa-comment-dots text-sm"></i>
-                                </div>
-                                <span>Live-Chat</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex flex-col md:flex-row justify-between items-center gap-4 border-t border-gray-200 pt-8 text-sm text-gray-500">
-                    <p>© 2025 Verlorin. Alle Rechte vorbehalten.</p>
-                    <div class="flex items-center gap-6">
-                        <button onclick="showPolicy('privacy')" class="hover:text-gray-700 transition-colors font-medium">Datenschutz</button>
-                        <button onclick="showPolicy('terms')" class="hover:text-gray-700 transition-colors font-medium">Nutzungsbedingungen</button>
-                    </div>
-                </div>
-                
-                <div class="flex flex-col items-center gap-4 mt-8 pt-8 border-t border-gray-200">
-                    <span class="text-sm text-gray-500 font-medium uppercase tracking-wide">Sicherer Checkout Garantiert</span>
-                    <div class="flex items-center gap-2 grayscale opacity-70">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Mastercard_2019_logo.svg" alt="Mastercard" class="h-6 w-auto">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" class="h-6 w-auto">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" class="h-6 w-auto">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/American_Express_logo_%282018%29.svg" alt="Amex" class="h-6 w-auto">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/JCB_logo.svg" alt="JCB" class="h-6 w-auto">
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
-
-    <!-- LEGAL PAGE CONTAINER (Hidden by default) -->
-    <div id="legal-page" class="hidden-section w-full bg-white min-h-screen">
-        <div class="border-b border-gray-200 py-4 px-4 sticky top-0 bg-white z-50">
-            <div class="container mx-auto max-w-4xl flex justify-between items-center">
-                 <!-- Text Logo Replacement for Legal Page -->
-                 <span class="text-xl font-black tracking-tight text-slate-900 uppercase">FROPLAY</span>
-                <button onclick="hidePolicy()" class="flex items-center gap-2 text-sm font-bold text-blue-600 hover:text-blue-800">
-                    <i class="fas fa-arrow-left"></i> Zurück
-                </button>
-            </div>
-        </div>
-
-        <div class="container mx-auto max-w-3xl px-4 py-12">
-            <!-- Privacy Content (German Placeholder) -->
-            <div id="privacy-content" class="hidden-section space-y-6 text-gray-700 text-sm md:text-base leading-relaxed">
-                <h1 class="text-3xl font-black text-black mb-8">Datenschutz</h1>
-                <p>Hier finden Sie unsere Datenschutzbestimmungen...</p>
-            </div>
-
-            <!-- Terms Content (German Placeholder) -->
-            <div id="terms-content" class="hidden-section space-y-6 text-gray-700 text-sm md:text-base leading-relaxed">
-                <h1 class="text-3xl font-black text-black mb-8">Nutzungsbedingungen</h1>
-                <p>Hier finden Sie unsere Nutzungsbedingungen...</p>
-            </div>
-        </div>
-        
-        <div class="border-t border-gray-200 py-6 text-center">
-            <p class="text-gray-400 text-sm">© 2025 Verlorin. Alle Rechte vorbehalten.</p>
-        </div>
-    </div>
-
-    <script>
-        // Simple View Router for Legal Pages
-        function showPolicy(type) {
-            document.getElementById('landing-page').style.display = 'none';
-            document.getElementById('legal-page').style.display = 'block';
+    <!-- Footer -->
+    <footer class="bg-gray-100 text-gray-500 py-10 border-t border-gray-200 mt-12">
+        <div class="container mx-auto px-4 text-center">
             
-            // Hide all contents first
-            document.getElementById('privacy-content').style.display = 'none';
-            document.getElementById('terms-content').style.display = 'none';
-            
-            // Show requested content
-            if(type === 'privacy') {
-                document.getElementById('privacy-content').style.display = 'block';
-                window.scrollTo(0, 0);
-            } else if(type === 'terms') {
-                document.getElementById('terms-content').style.display = 'block';
-                window.scrollTo(0, 0);
-            }
-        }
+            <!-- Legal Links -->
+            <div class="flex flex-wrap justify-center gap-4 md:gap-8 mb-6 text-sm font-medium text-gray-600">
+                <a href="#" class="hover:text-gray-900 transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-gray-900 transition-colors">Terms of Service</a>
+                <a href="#" class="hover:text-gray-900 transition-colors">Shipping Policy</a>
+                <a href="#" class="hover:text-gray-900 transition-colors">Refund Policy</a>
+                <a href="#" class="hover:text-gray-900 transition-colors">Contact Us</a>
+            </div>
 
-        function hidePolicy() {
-            document.getElementById('legal-page').style.display = 'none';
-            document.getElementById('landing-page').style.display = 'block';
-            window.scrollTo(0, document.body.scrollHeight);
-        }
-    </script>
+            <!-- Copyright -->
+            <p class="mb-6 text-sm">
+                &copy; 2024 NoBark Ultra. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
 </body>
 </html>
